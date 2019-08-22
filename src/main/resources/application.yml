@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: ccz
+    url: jdbc:mysql://127.0.0.1:3306/demo?useUnicode=true&characterEncoding=UTF-8
+
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml   //mybatis的mapper文件所在路径
+#  type-aliases-package: com.abc.entity   //实体类路径
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.abc.entity
+
+
+
+#    type: com.alibaba.druid.pool.DruidDataSource
+#
+#    spring:
+#    datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/sqltest?useUnicode=true&characterEncoding=UTF-8
+#    username: root
+#    password: root
+#    thymeleaf:
